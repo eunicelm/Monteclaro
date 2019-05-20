@@ -4,17 +4,25 @@
     <style>
         #formlogin{
             margin: auto;
-            border: 1px solid black;
+            border: 1px solid #737373;
             width: 250px;
             padding: 30px;
             margin-top: 200px;
             border-radius: 20px;
+            background-color: #ffcccc;
         }
         input{
             margin-top: 20px;
         }
         p{
             text-align: center;
+        }
+        #submit{
+            display: flex; 
+            justify-content: center;
+        }
+        #submitbutton{
+            padding: 5px;
         }
     </style>
 </head>
@@ -26,7 +34,10 @@
             Password:
             <input id="password" name="password" type="password" required>                    
             <br>
-            <input type="submit" value="Login" name="submit">
+            <div id="submit">
+            <input type="submit" value="LOGIN" name="submit"
+            id="submitbutton">
+            </div>
         </form>
     </div>
 </body>
